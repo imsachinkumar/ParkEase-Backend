@@ -1,0 +1,10 @@
+com\parkease\parkinglot\entity\ParkingLot$ParkingLotBuilder.class
+com\parkease\parkinglot\service\impl\ParkingLotServiceImpl.class
+com\parkease\parkinglot\entity\ParkingLot.class
+com\parkease\parkinglot\dto\ParkingLotRequest.class
+com\parkease\parkinglot\repository\ParkingLotRepository.class
+com\parkease\parkinglot\service\ParkingLotService.class
+com\parkease\parkinglot\resource\ParkingLotResource.class
+com\parkease\parkinglot\ParkingLotServiceApplication.class
+com\parkease\parkinglot\config\SecurityConfig.class
+com\parkease\parkinglot\entity\ParkingLot$LotStatus.class
