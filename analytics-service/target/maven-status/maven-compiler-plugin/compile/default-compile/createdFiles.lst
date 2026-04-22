@@ -1,0 +1,11 @@
+com\parkease\analytics\entity\AnalyticsEvent.class
+com\parkease\analytics\AnalyticsServiceApplication.class
+com\parkease\analytics\dto\AnalyticsRequest.class
+com\parkease\analytics\service\AnalyticsService.class
+com\parkease\analytics\service\impl\AnalyticsServiceImpl.class
+com\parkease\analytics\repository\AnalyticsRepository.class
+com\parkease\analytics\resource\AnalyticsResource.class
+com\parkease\analytics\entity\AnalyticsEvent$AnalyticsEventBuilder.class
+com\parkease\analytics\entity\AnalyticsEvent$EventType.class
+com\parkease\analytics\config\SecurityConfig.class
+com\parkease\analytics\entity\AnalyticsEvent$ReferenceType.class
