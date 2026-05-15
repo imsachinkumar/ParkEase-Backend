@@ -1,8 +1,14 @@
-C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\service\impl\ParkingLotServiceImpl.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\entity\ParkingLot.java
-C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\repository\ParkingLotRepository.java
-C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\config\SecurityConfig.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\exception\UnauthorizedException.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\exception\ErrorResponse.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\exception\GlobalExceptionHandler.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\service\ParkingLotService.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\dto\ParkingLotRequest.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\ParkingLotServiceApplication.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\exception\ResourceNotFoundException.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\exception\BadRequestException.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\service\impl\ParkingLotServiceImpl.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\repository\ParkingLotRepository.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\config\SecurityConfig.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\exception\DuplicateResourceException.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\parkinglot-service\src\main\java\com\parkease\parkinglot\resource\ParkingLotResource.java
