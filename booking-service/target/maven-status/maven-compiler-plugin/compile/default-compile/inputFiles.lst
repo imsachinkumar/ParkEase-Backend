@@ -1,8 +1,14 @@
-C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\service\BookingService.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\exception\ErrorResponse.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\exception\UnauthorizedException.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\service\impl\BookingServiceImpl.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\entity\Booking.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\exception\GlobalExceptionHandler.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\config\SecurityConfig.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\exception\DuplicateResourceException.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\service\BookingService.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\dto\BookingRequest.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\exception\ResourceNotFoundException.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\repository\BookingRepository.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\BookingServiceApplication.java
-C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\config\SecurityConfig.java
+C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\exception\BadRequestException.java
 C:\Users\sachi\Downloads\ParkEase-Backend\parkease\booking-service\src\main\java\com\parkease\booking\resource\BookingResource.java

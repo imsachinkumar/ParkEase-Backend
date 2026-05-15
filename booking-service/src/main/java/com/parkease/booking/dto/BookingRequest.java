@@ -16,7 +16,6 @@ public class BookingRequest {
     @NotNull(message = "Lot ID is required")
     private Integer lotId;
 
-    @NotNull(message = "Spot ID is required")
     private Integer spotId;
 
     @NotNull(message = "Start time is required")
