@@ -64,4 +64,15 @@ public class SpotController {
                     .body(ApiResponse.error(e.getMessage()));
         }
     }
+
+    @DeleteMapping("/delete/{spotId}")
+    public ResponseEntity<?> delete(@PathVariable Integer spotId) {
+        try {
+            restTemplate.delete(SPOT_SERVICE + "/delete/" + spotId);
+            return ResponseEntity.ok(ApiResponse.success("Spot deleted"));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest()
+                    .body(ApiResponse.error(e.getMessage()));
+        }
+    }
 }

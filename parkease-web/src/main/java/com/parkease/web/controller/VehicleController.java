@@ -62,4 +62,15 @@ public class VehicleController {
                     .body(ApiResponse.error(e.getMessage()));
         }
     }
+
+    @DeleteMapping("/delete/{vehicleId}")
+    public ResponseEntity<?> delete(@PathVariable Integer vehicleId) {
+        try {
+            restTemplate.delete(VEHICLE_SERVICE + "/delete/" + vehicleId);
+            return ResponseEntity.ok(ApiResponse.success("Vehicle deleted"));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest()
+                    .body(ApiResponse.error(e.getMessage()));
+        }
+    }
 }

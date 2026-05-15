@@ -2,6 +2,8 @@ package com.parkease.web.controller;
 
 import com.parkease.web.dto.ApiResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -69,6 +71,23 @@ public class ParkingLotController {
             Object response = restTemplate.getForObject(
                     LOT_SERVICE + "/active", Object.class);
             return ResponseEntity.ok(ApiResponse.success(response));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest()
+                    .body(ApiResponse.error(e.getMessage()));
+        }
+    }
+
+    @PutMapping("/{lotId}/status")
+    public ResponseEntity<?> updateStatus(
+            @PathVariable Integer lotId,
+            @RequestBody Map<String, Object> request) {
+        try {
+            String status = request.get("status").toString();
+            HttpEntity<Void> entity = new HttpEntity<>(null);
+            restTemplate.exchange(
+                    LOT_SERVICE + "/status/" + lotId + "?status=" + status,
+                    HttpMethod.PATCH, entity, Object.class);
+            return ResponseEntity.ok(ApiResponse.success("Status updated"));
         } catch (Exception e) {
             return ResponseEntity.badRequest()
                     .body(ApiResponse.error(e.getMessage()));

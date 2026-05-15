@@ -2,6 +2,8 @@ package com.parkease.web.controller;
 
 import com.parkease.web.dto.ApiResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -51,11 +53,11 @@ public class PaymentController {
         }
     }
 
-    @PatchMapping("/process/{paymentId}")
-    public ResponseEntity<?> process(@PathVariable Integer paymentId) {
+    @GetMapping("/all")
+    public ResponseEntity<?> getAll() {
         try {
-            Object response = restTemplate.patchForObject(
-                    PAYMENT_SERVICE + "/process/" + paymentId, null, Object.class);
+            Object response = restTemplate.getForObject(
+                    PAYMENT_SERVICE + "/all", Object.class);
             return ResponseEntity.ok(ApiResponse.success(response));
         } catch (Exception e) {
             return ResponseEntity.badRequest()
@@ -63,12 +65,28 @@ public class PaymentController {
         }
     }
 
-    @PatchMapping("/refund/{paymentId}")
+    @PutMapping("/process/{paymentId}")
+    public ResponseEntity<?> process(@PathVariable Integer paymentId) {
+        try {
+            HttpEntity<Void> entity = new HttpEntity<>(null);
+            restTemplate.exchange(
+                    PAYMENT_SERVICE + "/process/" + paymentId,
+                    HttpMethod.PATCH, entity, Object.class);
+            return ResponseEntity.ok(ApiResponse.success("Payment processed"));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest()
+                    .body(ApiResponse.error(e.getMessage()));
+        }
+    }
+
+    @PutMapping("/refund/{paymentId}")
     public ResponseEntity<?> refund(@PathVariable Integer paymentId) {
         try {
-            Object response = restTemplate.patchForObject(
-                    PAYMENT_SERVICE + "/refund/" + paymentId, null, Object.class);
-            return ResponseEntity.ok(ApiResponse.success(response));
+            HttpEntity<Void> entity = new HttpEntity<>(null);
+            restTemplate.exchange(
+                    PAYMENT_SERVICE + "/refund/" + paymentId,
+                    HttpMethod.PATCH, entity, Object.class);
+            return ResponseEntity.ok(ApiResponse.success("Payment refunded"));
         } catch (Exception e) {
             return ResponseEntity.badRequest()
                     .body(ApiResponse.error(e.getMessage()));
